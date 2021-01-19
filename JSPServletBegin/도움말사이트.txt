@@ -1,0 +1,21 @@
+
+< Oracle Database Online Documentation 11g Release 2 (11.2) >
+http://docs.oracle.com/cd/E11882_01/index.htm
+http://docs.oracle.com/cd/E11882_01/server.112/e41084/toc.htm
+http://docs.oracle.com/cd/E11882_01/nav/sql_keywords.htm
+
+
+< Java Platform, Standard Edition 8 API Specification >
+https://docs.oracle.com/javase/8/docs/api/index.html
+
+
+< JSP 2.3 API - Apache Tomcat 8.0.44 >
+http://tomcat.apache.org/tomcat-8.0-doc/jspapi/index.html
+
+
+< Servlet 3.1 API - Apache Tomcat 8.0.44 >
+http://tomcat.apache.org/tomcat-8.0-doc/servletapi/index.html
+
+
+< 스프링 OverView >
+https://docs.spring.io/spring/docs/current/javadoc-api/

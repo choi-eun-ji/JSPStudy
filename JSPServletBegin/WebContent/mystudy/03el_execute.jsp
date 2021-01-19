@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function gosubmit() {
+		var frm = document.myfrm;
+		var num1 = frm.firstNum.value.trim();
+		var num2 = frm.secondNum.value.trim();
+		
+		if(num1 == "" || num2 == ""){
+			alert("값을 입력하세요!!");
+			frm.firstNum.value = "";
+			frm.secondNum.value = "";
+			frm.firstNum.focus();
+			return;
+		}
+		
+		var regExp = /^[0-9]{1,5}$/;
+		if(!(regExp.test(num1) && regExp.test(num2))) {
+			alert("숫자를 입력하세요!!");
+			frm.firstNum.value = "";
+			frm.secondNum.value = "";
+			frm.firstNum.focus();
+			return;
+		}
+		
+		frm.action = "/JSPServletBegin/el03.do";
+		frm.submit();
+	}
+</script>
+</head>
+<body>
+	<h2>입력한 두개의 수 사이를 누적한 값 알아오기</h2>
+	<form name="myfrm">
+		<p>
+			첫번째 수 : <input type="text" name="firstNum" size="5" maxlength="5"/><br>
+			두번째 수 : <input type="text" name="secondNum" size="5" maxlength="5"/><br>
+			<button type="button" onclick="gosubmit()">계산하기</button>
+		</p>
+	</form>
+</body>
+</html>
